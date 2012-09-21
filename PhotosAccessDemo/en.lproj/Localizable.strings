@@ -1,0 +1,10 @@
+msg_saving = "Saving..";
+msg_save_image_fail = "Save image Failed";
+msg_save_image_success = "Save image Succeed";
+confirm_add_image_to_photos = "Do u want to add image to Photos?";
+alert_cancel = "Cancel";
+alert_approve = "OK";
+title_pictures = "Pictures";
+import_all = "Import All";
+confirm_delete_image = "Do u want to delete the all images?";
+delete_all = "Delete All";

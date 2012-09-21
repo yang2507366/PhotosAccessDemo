@@ -1,0 +1,10 @@
+msg_saving = "保存中..";
+msg_save_image_fail = "保存图片失败";
+msg_save_image_success = "保存图片成功";
+confirm_add_image_to_photos = "添加图片到照片中?";
+alert_cancel = "取消";
+alert_approve = "确定";
+title_pictures= "图片列表";
+import_all = "导入所有";
+confirm_delete_image = "删除所有图片?";
+delete_all = "删除所有";
