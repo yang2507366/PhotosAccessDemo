@@ -118,9 +118,9 @@
 {
     UIAlertView *alert = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"confirm_delete_image", nil) 
                                                     message:nil 
-                                                   delegate:self 
-                                          cancelButtonTitle:NSLocalizedString(@"alert_approve", nil) 
-                                          otherButtonTitles:NSLocalizedString(@"alert_cancel", nil), nil];
+                                                   delegate:self
+                                          cancelButtonTitle:NSLocalizedString(@"alert_cancel", nil)
+                                          otherButtonTitles:NSLocalizedString(@"alert_approve", nil), nil];
     alert.tag = ALERT_VIEW_DELETE;
     [alert show];
     [alert release];
@@ -136,7 +136,7 @@
 - (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
 {
     if(alertView.tag == ALERT_VIEW_IMPORT){
-        if(buttonIndex == 0){
+        if(buttonIndex != 0){
             // save image to photos
             if([self.importQueue count] != 0){
                 [NSThread detachNewThreadSelector:@selector(runSaveImage) toTarget:self withObject:nil];
@@ -145,7 +145,7 @@
             self.importQueue = nil;
         }
     }else if(alertView.tag == ALERT_VIEW_DELETE){
-        if(buttonIndex == 0){
+        if(buttonIndex != 0){
             for(NSString *fileName in self.fileNameList){
                 NSString *filePath = [self.documentPath stringByAppendingPathComponent:fileName];
                 [[NSFileManager defaultManager] removeItemAtPath:filePath error:nil];
@@ -208,8 +208,8 @@
     UIAlertView *alert = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"confirm_add_image_to_photos", nil) 
                                                     message:nil 
                                                    delegate:self 
-                                          cancelButtonTitle:NSLocalizedString(@"alert_approve", nil) 
-                                          otherButtonTitles:NSLocalizedString(@"alert_cancel", nil), nil];
+                                          cancelButtonTitle:NSLocalizedString(@"alert_cancel", nil) 
+                                          otherButtonTitles:NSLocalizedString(@"alert_approve", nil), nil];
     alert.tag = ALERT_VIEW_IMPORT;
     [alert show];
     [alert release];

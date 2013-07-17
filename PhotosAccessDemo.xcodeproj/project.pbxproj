@@ -93,9 +93,9 @@
 				3EF1EE52153470E70036B71C /* Additions */,
 				3E1402F41534609B00B4B6C8 /* AppDelegate.h */,
 				3E1402F51534609B00B4B6C8 /* AppDelegate.m */,
-				3E1402EC1534609B00B4B6C8 /* Supporting Files */,
 				3EDA2EE01534614E00DF2649 /* PictureListViewController.h */,
 				3EDA2EE11534614E00DF2649 /* PictureListViewController.m */,
+				3E1402EC1534609B00B4B6C8 /* Supporting Files */,
 			);
 			path = PhotosAccessDemo;
 			sourceTree = "<group>";
