@@ -32,6 +32,7 @@
     UINavigationController *nc = [[[UINavigationController alloc] 
                                   initWithRootViewController:vc] autorelease];
     self.window.rootViewController = nc;
+    //test
     
     return YES;
 }
