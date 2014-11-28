@@ -26,6 +26,8 @@
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     
+    // load picture list
+    
     UIViewController *vc = [[[PictureListViewController alloc] init] autorelease];
     UINavigationController *nc = [[[UINavigationController alloc] 
                                   initWithRootViewController:vc] autorelease];
